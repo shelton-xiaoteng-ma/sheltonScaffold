@@ -1,0 +1,8 @@
+{
+  "files": [],
+  "references": [
+    { "path": "apps/next-app" },
+    { "path": "apps/fastify-api" },
+    { "path": "packages/api-types" }
+  ]
+}

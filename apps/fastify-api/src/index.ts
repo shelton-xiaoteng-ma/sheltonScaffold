@@ -1,10 +1,10 @@
+import { appRouter, AppRouter } from "@penyo/api-types"; // 修正导入路径
 import {
   fastifyTRPCPlugin,
   FastifyTRPCPluginOptions,
 } from "@trpc/server/adapters/fastify";
 import fastify from "fastify";
 import { createContext } from "./context";
-import { appRouter, AppRouter } from "./router";
 
 const server = fastify({
   maxParamLength: 5000,
