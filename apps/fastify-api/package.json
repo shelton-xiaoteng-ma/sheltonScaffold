@@ -1,27 +1,28 @@
 {
-  "name": "api",
+  "name": "fastify-api",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.ts",
   "scripts": {
     "build": "tsc",
     "start": "fastify start dist/src/index.js",
-    "dev": "ts-node --project tsconfig.json -r tsconfig-paths/register src/index.ts",
+    "dev": "ts-node-dev --respawn --transpile-only -r tsconfig-paths/register src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@penyo/api-types": "workspace:*",
     "@trpc/server": "^11.1.0",
     "fastify": "^5.3.0",
     "fastify-cli": "^7.4.0",
-    "zod": "^3.24.2",
-    "@penyo/api-types": "workspace:*"
+    "zod": "^3.24.2"
   },
   "devDependencies": {
     "@types/node": "^20.17.30",
     "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
     "tsconfig-paths": "^4.2.0",
     "tsx": "^4.19.3",
     "typescript": "^5.8.3"
